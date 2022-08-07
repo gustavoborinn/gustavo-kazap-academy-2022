@@ -143,3 +143,171 @@ td img {
 .light-gray-3 {
   background-color: #C7C7CC !important;
 }
+
+//Artist
+.btn-danger {
+  background-color: #FF375F;
+  border: none;
+  padding: 10px;
+  width: 9vw;
+}
+
+.btn-secondary {
+  background-color: #C7C7CC;
+  color: #1C1C1E;
+  border: none;
+  padding: 10px;
+  width: 10vw;
+}
+
+h1#title_artist {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+h1#titles {
+  font-size: 35px;
+  margin-top: 23px;
+}
+
+a {
+  text-decoration: none;
+  color: #C7C7CC;
+}
+
+// Modal
+.modal {
+  margin-top: 8%;
+  --bs-modal-bg: none;
+  --bs-border-color: none;
+}
+.modal-content {
+  text-align: center;
+}
+
+div.modal-header {
+  display: inline-flex;
+  justify-content: center;
+  background-color: #2C2C2E;
+}
+.modal-header span {
+  font-size: 30px;
+}
+.modal-header h1 {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0 0 0 10px;
+}
+
+div.modal-body {
+  background-color: #1C1C1E;
+  padding: 40px;
+
+}
+.modal-body h4 {
+  font-size: 23px;
+  padding: 10px 0;
+}
+.modal-body p {
+  color: #D1D1D6;
+  font-size: 17px;
+}
+
+div.modal-footer {
+  background-color: #2C2C2E;
+}
+
+.btn#btn_modal_cancel {
+  background-color: #636366;
+  width: 140px;
+  padding: 9px;
+  color: white;
+  border: none;
+  font-size: 18px;
+}
+.btn#btn_modal_cancel:hover {
+  background-color: #4a4a4a;
+}
+.btn#btn_modal_delete {
+  padding: 9px;
+  width: 130px;
+  font-size: 18px;
+}
+
+//forms
+.form-control {
+  border: 1px solid gray;
+  background-color: #2C2C2E;
+  height: 6vh; color: #F2F2F7;
+  margin-bottom: 10px;
+}
+#titleNew {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+select {
+  border: 1px solid gray;
+  background-color: #2C2C2E;
+  height: 6vh;
+  color: #F2F2F7;
+  border-radius: 5px;
+  width: 38vw;
+}
+.artists:active {
+  background-color: #FF375F;
+}
+.DoubleLabel {
+  width: 38vw;
+}
+.artists {
+  display: inline-flex;
+  border: 1px solid #636366;
+  width: 180px;
+  border-radius: 5px;
+  padding: 4px;
+  margin-right: 7px;
+  margin-bottom: 10px;
+}
+.artists input {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+//cards
+#estreia {
+  background-color: #FF375F;
+  width: fit-content;
+  border-radius: 5px;
+  padding: 0 5px;
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+#movie_director {
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+#movie_director span {
+  color: #636366;
+}
+#movie_title {
+  font-size: 23px;
+}
+#movie_main{
+  font-size: 13px;
+}
+#movie_maintitle {
+  font-size: 26px;
+}
+#movie_mainsinopse {
+  font-size: 20px;
+}
+#movie_main span{
+  color: #636366;
+}
+.card img {
+  max-height: auto;
+}
+.mainCard img {
+  -webkit-mask-image: linear-gradient(to left, transparent 4%, black 100%);
+}

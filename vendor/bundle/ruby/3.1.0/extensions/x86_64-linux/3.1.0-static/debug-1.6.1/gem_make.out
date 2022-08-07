@@ -1,0 +1,16 @@
+current directory: /home/gustavo/Kazap/Teste/gustavo-academy-2022/vendor/bundle/ruby/3.1.0/gems/debug-1.6.1/ext/debug
+/home/gustavo/.frum/versions/3.1.2/bin/ruby -I /home/gustavo/.frum/versions/3.1.2/lib/ruby/site_ruby/3.1.0 extconf.rb
+creating Makefile
+
+current directory: /home/gustavo/Kazap/Teste/gustavo-academy-2022/vendor/bundle/ruby/3.1.0/gems/debug-1.6.1/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20220806-15117-sqnx0q sitelibdir\=./.gem.20220806-15117-sqnx0q clean
+
+current directory: /home/gustavo/Kazap/Teste/gustavo-academy-2022/vendor/bundle/ruby/3.1.0/gems/debug-1.6.1/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20220806-15117-sqnx0q sitelibdir\=./.gem.20220806-15117-sqnx0q
+compiling debug.c
+compiling iseq_collector.c
+linking shared-object debug/debug.so
+
+current directory: /home/gustavo/Kazap/Teste/gustavo-academy-2022/vendor/bundle/ruby/3.1.0/gems/debug-1.6.1/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20220806-15117-sqnx0q sitelibdir\=./.gem.20220806-15117-sqnx0q install
+/usr/bin/install -c -m 0755 debug.so ./.gem.20220806-15117-sqnx0q/debug

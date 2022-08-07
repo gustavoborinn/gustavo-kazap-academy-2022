@@ -1,0 +1,25 @@
+<p style="color: green"><%= notice %></p>
+
+<div class="d-flex mb-3 justify-content-between">
+  <h1 id="titles">Filmes</h1>
+    <%= link_to "+ Novo", new_movie_path, :class => "btn btn-danger my-4" %>
+</div>
+
+<table class="table">
+  <thead>
+    <tr style="font-size: 18px">
+      <th class="col-md-3" scope="col">Título</th>
+      <th class="col-md-3" scope="col">Diretor</th>
+      <th class="col-md-3" scope="col">Gênero</th>
+      <th class="col-md-3" scope="col">Estreia</th>
+      <th class="col-md-3" style="text-align: end" id="acao" scope="col">Ações</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @movies.each do |movie| %>
+      <%= render movie %>
+    <% end %>
+  </tbody>
+
+</table>

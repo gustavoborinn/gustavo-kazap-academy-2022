@@ -1,0 +1,31 @@
+<div id="<%= dom_id director %>">
+ <tr>
+    <td><%= treat_value(director.name) %></td>
+    <td><%= format_data(treat_value(director.created_at)) %></td>
+    <td style="text-align: end">
+      <%= link_to image_tag("icons/editIcon.png"), edit_director_path(director) %>
+      <a style="cursor: pointer" data-bs-toggle="modal" data-bs-target="#myModal<%= director.id %>">
+        <%= image_tag("icons/deleteIcon.png") %>
+      </a>
+    </td>
+  </tr>
+</div>
+
+<div class="modal" id="myModal<%= director.id %>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class='bi bi-exclamation-triangle-fill' style="color: #FF375F"></span>
+                <h1>Atenção</h1>
+            </div>
+            <div class="modal-body">
+                <h4>Deseja realmente excluir este item?</h4>
+                <p>Após a exclusão não será mais possivel recuperar os dados!</p>
+            </div>
+            <div class="modal-footer">
+                <%= button_to "Cancelar", director, :id => "btn_modal_cancel", :class => "btn btn" %>
+                <%= button_to "Excluir", director_path(director), method: :delete, :id => "btn_modal_delete", :class => "btn btn-danger" %>
+            </div>
+        </div>
+    </div>
+</div>

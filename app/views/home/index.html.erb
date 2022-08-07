@@ -1,46 +1,79 @@
 <div class="card mb-3 col-12 dark-gray-6">
   <div class="row g-0 rounded dark-gray-6">
     <div class="col-md-6 mainCard">
-      <%= image_tag 'main-bg.png' %>
+      <%= image_tag @first.cover_url %>
     </div>
     <div class="col-md-6">
+      <div id="estreia">
+        <p>Estreia: <%= format_data_no_time(@first.published_at) %></p>
+      </div>
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        <h5 class="card-title" id="movie_maintitle"><%= @first.title %></h5>
+        <p id="movie_main" style="margin-bottom: 3px"><span>Diretor: </span><%= @first.director.name %></p>
+        <p id="movie_main"><span>Gênero: </span><%= @first.movie_genre.name %></p>
+        <p class="card-text" id="movie_mainsinopse"><%= @first.sinopse %></p>
+        <p class="card-text"><small class="text-muted"> Post feito no dia <%= format_data_no_time(@first.created_at) %></small></p>
       </div>
     </div>
   </div>
 </div>
+
 <div class="row">
   <div class="col-sm-4">
     <div class="card dark-gray-6">
-      <%= image_tag 'cover1.png', class: 'card-img-top' %>
+      <%= image_tag @second.cover_url, class: 'card-img-top' %>
       <div class="card-body">
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias porro amet consectetur reprehenderit possimus unde nemo quasi nisi, doloremque id nostrum enim atque, debitis quaerat itaque non quibusdam perferendis dolor.
-        </p>
+        <div class="col-md">
+          <div id="estreia">
+            <p>Estreia: <%= format_data_no_time(@second.published_at) %></p>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title" id="movie_title"><%= @second.title %></h5>
+            <p id="movie_director"><span>Diretor: </span><%= @second.director.name %></p>
+            <p class="card-text"><%= @second.sinopse %></p>
+            <p class="card-text"><small class="text-muted"> Post feito no dia <%= format_data_no_time(@second.created_at) %></small></p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
+
   <div class="col-sm-4">
     <div class="card dark-gray-6">
-      <%= image_tag 'cover2.png', class: 'card-img-top' %>
+      <%= image_tag @third.cover_url, class: 'card-img-top' %>
       <div class="card-body">
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias porro amet consectetur reprehenderit possimus unde nemo quasi nisi, doloremque id nostrum enim atque, debitis quaerat itaque non quibusdam perferendis dolor.
-        </p>
+        <div class="col-md">
+          <div id="estreia">
+            <p>Estreia: <%= format_data_no_time(@third.published_at) %></p>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title" id="movie_title"><%= @third.title %></h5>
+            <p id="movie_director"><span>Diretor: </span><%= @third.director.name %></p>
+            <p class="card-text"><%= @third.sinopse %></p>
+            <p class="card-text"><small class="text-muted"> Post feito no dia <%= format_data_no_time(@third.created_at) %></small></p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
+
   <div class="col-sm-4">
     <div class="card dark-gray-6">
-      <%= image_tag 'cover3.png', class: 'card-img-top' %>
+      <%= image_tag @fourth.cover_url, class: 'card-img-top' %>
       <div class="card-body">
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias porro amet consectetur reprehenderit possimus unde nemo quasi nisi, doloremque id nostrum enim atque, debitis quaerat itaque non quibusdam perferendis dolor.
-        </p>
+        <div class="col-md">
+          <div id="estreia">
+            <p>Estreia: <%= format_data_no_time(@fourth.published_at) %></p>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title" id="movie_title"><%= @fourth.title %></h5>
+            <p id="movie_director"><span>Diretor: </span><%= @fourth.director.name %></p>
+            <p class="card-text"><%= @fourth.sinopse %></p>
+            <p class="card-text"><small class="text-muted"> Post feito no dia <%= format_data_no_time(@fourth.created_at) %></small></p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
+
 </div>

@@ -1,0 +1,22 @@
+<%= form_with(model: artist) do |form| %>
+  <% if artist.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(artist.errors.count, "error") %> prohibited this artist from being saved:</h2>
+
+      <ul>
+        <% artist.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <%= form.label :name, :style => "color: #C7C7CC" %>
+  <%= form.text_field :name, :class => "form-control", :style => "border: 1px solid gray; background-color: #2C2C2E; height: 7vh; color: #F2F2F7", :placeholder => "Zandaya" %>
+
+  <div class="artist_new_btn" style="text-align: end">
+    <%= link_to "Cancelar", artists_path, :class => "btn btn-secondary" %>
+    <%= form.submit :value => "Salvar", :class => "btn btn-danger my-4" %>
+  </div>
+
+<% end %>
